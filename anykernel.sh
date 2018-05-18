@@ -4,21 +4,21 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=
+kernel.string=Stock Pixel 2 (XL) kernel for June security update
 do.devicecheck=1
 do.modules=0
 do.cleanup=1
 do.cleanuponabort=0
-device.name1=
-device.name2=
-device.name3=
+device.name1=taimen
+device.name2=wahoo
+device.name3=walleye
 device.name4=
 device.name5=
 '; } # end properties
 
 # shell variables
-block=;
-is_slot_device=0;
+block=/dev/block/bootdevice/by-name/boot;
+is_slot_device=1;
 ramdisk_compression=auto;
 
 
@@ -28,5 +28,5 @@ ramdisk_compression=auto;
 
 
 ## AnyKernel install
-dump_boot;
-write_boot;
+split_boot;
+flash_boot;
