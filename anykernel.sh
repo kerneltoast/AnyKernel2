@@ -4,16 +4,13 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=Stock Pixel 2 (XL) kernel for June security update
+kernel.string=Sultan Kernel for the Pixel 2 and Pixel 2 XL
 do.devicecheck=1
 do.modules=0
 do.cleanup=1
 do.cleanuponabort=0
 device.name1=taimen
-device.name2=wahoo
-device.name3=walleye
-device.name4=
-device.name5=
+device.name2=walleye
 '; } # end properties
 
 # shell variables
