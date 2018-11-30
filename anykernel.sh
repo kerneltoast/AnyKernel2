@@ -89,6 +89,6 @@ if $in_recovery; then
   mount -o ro -t auto /system;
 fi;
 
-
-# Install the boot image
+# Flash boot and dtbo
 flash_boot;
+flash_dtbo;
